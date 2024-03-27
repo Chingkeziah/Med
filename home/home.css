@@ -1,1 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Sofia pro";
+}
+
+.wrapper {
+  display: grid;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #f5ffff;
+}
+
+.sidebar header {
+  font-size: 18px;
+  text-align: center;
+  line-height: 160%;
+  user-select: none;
+  margin-bottom: 50px;
+}
+
+.header-logo{
+  display: grid;
+  margin-left: 25px;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 160%;
+  font-size: 18px;
+  color: var(--Greys-1300, #201f1f);
+  padding-left: 25px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+ul li:hover a {
+  padding-left: 50px;
+}
+
+.active {
+  background: rgba(192, 253, 237, 1);
+}
+
+.link:hover {
+  background: rgba(192, 253, 237, 1);
+}
+
+.sidebar ul a img {
+  margin-right: 16px;
+}
+
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fcfbf7;
+  border-bottom: 1px solid rgba(218, 210, 184, 0.7);
+  margin-left: 16%;
+}
+
+.text h1 {
+  color: var(--Primary-900, #007a87);
+  font-family: "Sofia Pro";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border: 1px solid var(--Secondary-0, #fff5f8);
+  border-radius: 40px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 400px;
+  height: 60px;
+}
+
+.search-bar img {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  background: rgba(0, 122, 135, 1);
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile h3 {
+  color: #1b1b1b;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.profile img {
+  margin-right: 20px;
+}
+
+.notification {
+  margin-left: 20px;
+}
+
+.notification img:first-child {
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.notification img:last-child {
+  position: absolute;
+  margin-left: -35px;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+}
