@@ -2,6 +2,7 @@
     margin: 5px 0 50px 70px;
     height: 70px;
     width: 100px;
+    background-color: rgba(18, 151, 165, 1);
 }
 .pages-container > *{
     display: flex;
@@ -43,15 +44,61 @@ li>button{
     margin-top: -50px;
 }
 .app-title>button{
-    padding: 7px 30px;
+    padding: 10px 30px;
     border-radius: 40%;
+    color: white;
+    background-color: rgba(205, 21, 82, 1);
+    outline: none;
+    border: none;
 }
+/* .images{
+    display: flex;
+    justify-content: end;
+} */
+.images>img:nth-child(2){
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    margin: -280px 0 0 -60px;
+}
+/* .images>img:nth-child(2){
+    margin-right: 100px;
+} */
 .appointment-booking{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     margin-top: 50px;
     background-color: rgb(232, 246, 252);
+}
+.appointment-booking>div:nth-child(1){
+    margin: 70px 0 30px 150px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/9afc/6bc6/52e541034ad416df5c98d0fb6fa33a4d?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o6TnNrIBu--ceLTlHMRXy9kezn9UI6IEi-HwaMNrJd9zNicyGKA2B7XNQAePWTdFQGtiFE87PAsctMAN1FN2duTq7Q7lCuWN-MtXQCI5zSzEpp0raeIJxkyhsqNB8mi3tysDyaBvtKDYKY112CI5jqZVWBLrLqeBL-23WxeEzC5XpVJbYva8~N3Sjqjxkd12vZyuBQPdK58jZGlz-N92YTwfhE3IDIAv3rUABZTw9LherhdjWfisL8dfzMTTsX7bUh32Ogsa8QM8XYbMtFuGZRVs0sybRX2wmcGA96ugiliNVhMBGu97K2EVi0K~lu-Q~cCUxmBnPhmy8R-~uB0a0A__");
+}
+.appointment-booking>div:nth-child(2){
+    margin: 70px 150px 30px 0;
+    background-image: url("https://s3-alpha-sig.figma.com/img/cd55/572f/d683454cd2e04b4ea06449b7fa2a8542?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WXQnSDpQ9qsreAeWNsQ1z5nxcBP4hj2f7DPGZj4kLPICIDO5MB~TdSWuJf95EXQL3TZoVv0PYGXaLMw2DjvMW0ctcd1448Vyiuft4wHnOePQcMzTqL7lywZnUeUdtuOkTn4-sAPZoujc9OQ6zIgtfkGK2Gk74nU0B6hBT~lgUV0XbUNLC4f2Z-VdXW9Mzq90v7BETGdHt0SAAb6dOKtS~nLkIaVacry00flrkW0czc13mURk24Z~sEkZ9i2JCtvvUFPIrTJ8giHQtNwnYK2b3N5WZZX1ROA9E0MBA0wsyaXtsMm1tao55jaWPkbKxV4iFruPeZ1UxD-jFP4DIYnF8A__");
+}
+.appointment-booking>div:nth-child(3){
+    margin: 30px 0 70px 150px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/9611/1371/e423aeca5149a6083427b656e2ad5994?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Pe2EsA~us7HLW-rU65St-DUIrJbFrr~0lh4dV2kfX4-J61hcc5rT5elW9LTgTZsNfeeD733VyKVQN8Ygs-QKR4uu5ql9aqhDrrkLrutsBpWHJTE-i4GFURLJzjHIVg5VPE0ocOBa0NO8u4SB5t1k~~FzHIXNDF~5tJ4sytX9~fZx23yCvrOrKc9QM150e7~IvdRkhEEyQmPbbV41CQ7D4yrlS3u3Kn0K2u35lTpA~A1SjdLFEYhSfwsz3jT5SuCeSa7qmxl3SXqFDj2S4tdl0HAwAKGu1DEJGS9mbAtr7~~M-2ixT6cTY-A~eYQuI4RmrB13pRY6gBf35yaFlc53jA__");
+}
+.appointment-booking>div:nth-child(4){
+    margin: 30px 150px 70px 0;
+    background-image: url("https://s3-alpha-sig.figma.com/img/d57b/ceb8/beb45b849ce70f1397062730faeb8b5b?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cmOBGBcrRLCmpXVa26aZAwH9OnPgVrlPBFiXsySQZ95pLZAFYYEA9GuMQoiN5OqpK77aUFM0gAZkF2164l~6DiLxOHNs874iy3eAuzb6lSMNa-wH-XrEAdJTPiFdPPaVNs~yzuG6MKyDEi1vV2C5XzdrQ1cLepkvKtKpmA~0vvChoZrwFX2XUc9UkQt0tzypc~ATqPLLF05pTunZqGN8Lg3xe71I~4ByJkgbF3z9mjHot18AZjC2bXKJoJcdkGpvTkMAjLQpjrXPjgD42HO2HQN0KjSiHoFCLE-G0lQniC2fcWLtSFlI0yS1Ql49eHb6FxscPSI7FZiyQIN3WX1dBw__");
+}
+.appointment-booking>div{
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.p{
+    margin: 90px 30px 0 30px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 aside:first-of-type{
     text-align: center;
@@ -90,13 +137,31 @@ aside:first-of-type{
 .booking{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background-image: url("https://s3-alpha-sig.figma.com/img/6fdc/0dd5/f8b2d30a8067752e15fe5488ba6a61ad?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iNa85EeaIs07ZwzfgEQXKfSGDJjbq4~PYjhXhz78ATcJhIOHmWripuEcOkoQ9DubFXUbBhwB1MpoIT8zY7EgLQQ6lBYTAV3mZIiXXpSySSL2hefeZZMX0UT-E754D~sfgSNykQRzU8cg8QAHN0NScU9s1ZqJA53xQLQxMagRWyWm5oiWPLcgAbqCvk845Fylx365z5V~JRFF6e~yj~aoegOOUNx9guS2UzLSf5AtaHn3NbGetOjSkFGwPvD3NBJmkxPpLUnARBf0jxNqVXqzd5jb6NaCTPJB5dpyp2dJdmeueFFQ-wmscmbP-v5~PgBbeNxWrKMp8H2XcaHRDBJGIw__");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+}
+.logo-white>img{
+    min-height: 80px;
+    min-width: 100px;
+}
+.booking>h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    width: 600px;
 }
 .contact-us{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
+/* .social-icons>div{
+    width: 300px;
+    height: 300px; 
+}*/
 .copyright-protection{
     display: flex;
     justify-content: center;
