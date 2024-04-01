@@ -10,6 +10,7 @@
 
 body {
   font-family: "Sofia pro";
+  background: #fcfbf7;
 }
 
 /* Sidebar styling */
@@ -17,7 +18,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 200px;
+  width: 15%;
   height: 100%;
   background: #f5ffff;
 }
@@ -68,7 +69,7 @@ ul li:hover a {
 }
 .container-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
   background: #fcfbf7;
@@ -174,9 +175,9 @@ ul li:hover a {
   align-items: center;
   border-radius: 20px;
   background: var(--Primary-900, #007a87);
-  margin: 4%;
-  width: 1000px;
-  height: 257px;
+  margin: 5%;
+  width: 85%;
+  height: 25.7%;
   padding: 40px;
   flex-direction: row;
   align-items: flex-start;
@@ -228,5 +229,68 @@ ul li:hover a {
   font-weight: 400;
   font-size: 20px;
   padding-top: 7px;
-  
+}
+
+.headline-button:hover {
+  cursor: pointer;
+  background: rgba(192, 253, 237, 1);
+}
+/* Card styling */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5%;
+}
+
+.card-1 {
+  border-radius: 20px;
+  background: var(--Primary-900, #007a87);
+  width: 520px;
+  height: 188px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-2 {
+  border-radius: 20px;
+  background: var(--Primary-900, #007a87);
+  width: 520px;
+  height: 188px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text {
+  color: var(--Greys-100, #fff);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.card-button {
+  border-radius: 20px;
+  background: var(--Secondary-100, #fdc0d4);
+  color: var(--Greys-1400, #111);
+  text-align: center;
+  width: 247px;
+  height: 60px;
+  padding: 10px;
+}
+
+.card-button .btn {
+  border: none;
+  background: none;
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  background: rgba(192, 253, 237, 1);
 }
